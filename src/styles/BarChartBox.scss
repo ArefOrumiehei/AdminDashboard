@@ -1,0 +1,19 @@
+@import './responsive';
+
+.barChartBox {
+    width: 100%;
+    height: 100%;
+
+    h2 {
+        margin-bottom: 20px;
+
+        @include xxl {
+            font-size: 24px;
+        }
+    }
+
+    .chart {
+        height: 100%;
+        width: 100%;
+    }
+}

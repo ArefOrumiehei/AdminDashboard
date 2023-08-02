@@ -1,0 +1,46 @@
+@import './variables';
+
+.dataTable {
+
+    .dataGrid {
+        background-color: white;
+
+        .MuiDataGrid-toolbarContainer {
+            flex-direction: row-reverse;
+
+            
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .true {
+            color: green;
+        }
+
+        .false {
+            color : red
+        }
+
+        .action {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+    
+            .edit , .delete {
+                cursor: pointer;
+            }
+    
+            .edit {
+                color: limegreen;
+            }
+    
+            .delete {
+                color: tomato;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import './variables';
+
+.users {
+
+    .info {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px;
+            cursor: pointer;
+            border:  none;
+            border-radius: 5px;
+            background-color: $soft-color;
+        }
+    }
+}
