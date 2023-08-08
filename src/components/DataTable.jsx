@@ -5,7 +5,7 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { IconEdit , IconTrash } from '@tabler/icons-react'
 import { Link } from 'react-router-dom';
 
-  
+
 const DataTable = (props) => {
 
     const actionColumn = { field : 'action' , headerName : "Action" , width : 100 ,
@@ -27,7 +27,7 @@ const DataTable = (props) => {
         //delete item
         //axios.delete(.....)
     }
- 
+
 
     return (
         <div className='dataTable'>

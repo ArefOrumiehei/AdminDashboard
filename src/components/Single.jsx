@@ -7,7 +7,6 @@ import { Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis , Tooltip } 
 
 
 const Single = (props) => {
-    console.log(props);
     
     return (
         <div className='single'>
