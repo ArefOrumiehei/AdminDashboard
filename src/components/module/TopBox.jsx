@@ -1,6 +1,9 @@
+//Data
 import { usersData } from "../../js/usersData";
 
+//Styles
 import '../../styles/TopBox.scss'
+
 
 const TopBox = () => {
     return (

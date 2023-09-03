@@ -1,11 +1,18 @@
+import { useState } from 'react';
+
+//Styles
 import '../styles/Users.scss'
 
-import DataTable from '../components/DataTable';
+//Data
 import { usersDataTable } from '../js/usersData'
-import { IconUserPlus , IconCircleCheck , IconCircleX } from '@tabler/icons-react'
-import Add from '../components/Add';
 
-import { useState } from 'react';
+//Icons
+import { IconUserPlus , IconCircleCheck , IconCircleX } from '@tabler/icons-react'
+
+//Components
+import Add from '../components/Add';
+import DataTable from '../components/DataTable';
+
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 50 },
@@ -30,7 +37,7 @@ const columns = [
     },
 ];
 
- 
+
 
 const Users = () => {
 
@@ -41,7 +48,7 @@ const Users = () => {
         <div className='users'>
             <div className="info">
                 <h1>Users</h1>
-                <button onClick={() => setOpen(true)}><IconUserPlus size={16}/>Add new user</button>
+                <button onClick={() => setOpen(true)}><IconUserPlus size={24}/>Add new user</button>
             </div>
             <DataTable route='user' columns={columns} rows={usersDataTable} />
             {open && <Add title='User' columns={columns} setOpen={setOpen} />}

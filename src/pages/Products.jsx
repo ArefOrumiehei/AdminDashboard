@@ -1,12 +1,18 @@
 import { useState } from 'react';
 
+//Styles
 import '../styles/Products.scss'
 
+//Components
 import DataTable from '../components/DataTable';
 import Add from '../components/Add';
+
+//Data
 import { productsData } from '../js/productsData'
 
+//Icons
 import { IconCircleCheck, IconCircleX, IconFilePlus } from '@tabler/icons-react';
+
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 50 },
@@ -29,14 +35,15 @@ const columns = [
 
 const Products = () => {
     const [open , setOpen] = useState(false)
+
     return (
         <div className='products'>
             <div className="info">
                 <h1>Products</h1>
-                <button onClick={() => setOpen(true)}><IconFilePlus size={16}/>Add new Product</button>
+                <button onClick={() => setOpen(true)}><IconFilePlus size={24}/>Add new Product</button>
             </div>
             <DataTable route='product' columns={columns} rows={productsData} />
-            {open && <Add title='product' columns={columns} setOpen={setOpen} />}
+            {open && <Add title='product' columns={columns} open={open} setOpen={setOpen} />}
         </div>
     );
 };

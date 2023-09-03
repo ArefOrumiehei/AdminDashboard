@@ -1,3 +1,4 @@
+//Icons
 import {IconHome ,
         IconUsers ,
         IconUser ,
@@ -13,7 +14,10 @@ import {IconHome ,
         IconChartBar ,
         IconFileAnalytics} from '@tabler/icons-react'
 
+//Styles
 import '../styles/Menu.scss'
+
+//Components
 import Item from './Item';
 
 const Menu = () => {

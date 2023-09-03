@@ -1,7 +1,10 @@
 import { useParams } from 'react-router-dom';
+
+//Data
 import { singleProductData } from '../js/singleData';
+
+//Components
 import Single from '../components/Single';
-import '../styles/Product.scss';
 
 
 const Product = () => {
@@ -16,7 +19,7 @@ const Product = () => {
       </div>
     );
   } else {
-    return <p>محصول مورد نظر یافت نشد</p>;
+    return <p>The desired product was not found. :(</p>;
   }
 };
 

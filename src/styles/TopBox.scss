@@ -1,4 +1,5 @@
 @import './responsive';
+@import './variables';
 
 .topBox {
 
@@ -35,6 +36,9 @@
                     }
                     @include lg {
                         display: block;
+                    }
+                    @include xs {
+                        display: none;
                     }
                 }
 

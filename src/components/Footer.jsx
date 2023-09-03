@@ -1,5 +1,7 @@
+//Styles
 import '../styles/Footer.scss'
 
+//Icons
 import {  IconCopyright } from '@tabler/icons-react';
 
 

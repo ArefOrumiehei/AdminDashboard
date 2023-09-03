@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
+
+//Styles
 import '../../styles/ChartBox.scss'
 
-import { Link } from 'react-router-dom'
+//reCharts
 import { LineChart, Line, ResponsiveContainer, Tooltip } from "recharts";
 
 

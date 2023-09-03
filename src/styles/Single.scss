@@ -1,4 +1,5 @@
 @import './responsive';
+@import './variables';
 
 .single {
     display: flex;
@@ -6,6 +7,12 @@
     @include xl {
         flex-direction: column;
         gap: 50px;
+    }
+    @include sm {
+        gap: 20px;
+    }
+    @include xs {
+        gap: 10px;
     }
     
     .view {
@@ -18,20 +25,44 @@
                 align-items: center;
                 gap: 20px;
 
+
+
                 img {
                     width: 100px;
                     height: 100px;
                     border-radius: 20px;
                     object-fit: cover;
+
+                    @include sm {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    @include xs {
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
 
                 h2 {
                     font-weight: 500;
+                    @include sm {
+                        font-size: 18px;
+                    }
+                    @include xs {
+                        font-size: 16px;
+                    }
                 }
             }
 
             .details {
                 font-size: 18px;
+
+                @include sm {
+                    font-size: 16px;
+                }
+                @include xs {
+                    font-size: 14px;
+                }
 
                 .item {
                     margin: 30px 0;
@@ -50,10 +81,10 @@
         }
 
         hr {
-           width: 90%; 
-           height: 0;
-           border: 0.5px solid gray;
-           margin: 20px 0;
+            width: 90%; 
+            height: 0;
+            border: 0.5px solid gray;
+            margin: 20px 0;
         }
 
         .chart {
@@ -73,6 +104,13 @@
 
         h2{
             margin-bottom: 20px;
+
+            @include sm {
+                font-size: 18px;
+            }
+            @include xs {
+                font-size: 16px;
+            }
         }
 
         ul {

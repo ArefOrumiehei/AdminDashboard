@@ -1,14 +1,20 @@
+//Styles
 import '../styles/Home.scss'
 
+//Data
 import { usersDataChart , productsDataChart , revenueDataChart , conversionDataChart} from '../js/chartData'
 import { visitDataBoxChart , revenueDataBoxChart } from '../js/barChartData'
+
+//Icons
 import { IconUsersGroup , IconBuildingStore , IconBrandCashapp , IconAB2 } from '@tabler/icons-react'
 
+//Components
 import TopBox from '../components/module/TopBox';
 import ChartBox from '../components/module/ChartBox';
 import BarChartBox from '../components/module/BarChartBox';
 import PieChartBox from '../components/module/PieChartBox';
 import BigChartBox from '../components/module/BigChartBox';
+
 
 const Home = () => {
     return (

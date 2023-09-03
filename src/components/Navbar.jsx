@@ -1,5 +1,7 @@
+//Styles
 import '../styles/Navbar.scss'
 
+//Icons
 import { IconBrandReact , IconSearch , IconApps , IconBorderCorners , IconSettings , IconBell , IconUserCircle } from '@tabler/icons-react';
 
 const Navbar = () => {

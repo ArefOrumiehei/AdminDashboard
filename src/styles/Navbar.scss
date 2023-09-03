@@ -1,5 +1,5 @@
 @import './responsive';
-
+@import './variables';
 
 .navbar {
     display: flex;
@@ -60,6 +60,13 @@
                 height: 26px;
                 border-radius: 50%;
                 object-fit: cover;
+            }
+
+            span {
+                
+                @include xs {
+                    display: none;
+                }
             }
         }
     }

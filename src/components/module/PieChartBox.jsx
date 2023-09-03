@@ -1,6 +1,9 @@
 import React from 'react';
 
+//reCharts
 import { ResponsiveContainer , PieChart , Pie , Cell, Tooltip } from 'recharts';
+
+//Styles
 import '../../styles/PieChartBox.scss'
 
 

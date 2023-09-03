@@ -1,6 +1,26 @@
+@import './responsive';
 @import './variables';
 
 .dataTable {
+
+    @include xxl {
+        width: 80vw;
+    }
+    @include xl {
+        width: 80vw;
+    }
+    @include lg {
+        width: 80vw;
+    }
+    @include md {
+        width: 70vw;
+    }
+    @include sm {
+        width: 60vw;
+    }
+    @include xs {
+        width: 200px;
+    }
 
     .dataGrid {
         background-color: white;

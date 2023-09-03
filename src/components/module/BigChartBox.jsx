@@ -1,5 +1,7 @@
+//Styles
 import '../../styles/BigChartBox.scss';
 
+//reCharts
 import { ResponsiveContainer , AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
 
 
@@ -11,7 +13,7 @@ const data = [
     {name: "Tru", books: 1890, clothes: 4800, technology: 2181},
     {name: "Fri", books: 2390, clothes: 3800, technology: 2500},
     {name: "Sat", books: 3490, clothes: 4300, technology: 2100}
- ];
+];
 
 const BigChartBox = () => {
     return (

@@ -1,10 +1,13 @@
 import react, { useEffect }  from 'react';
-
-import '../styles/Add.scss';
-
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+
+//Styles
+import '../styles/Add.scss';
+
+//Icons
 import { IconX } from '@tabler/icons-react';
+
 
 const Add = (props) => {
 
@@ -24,7 +27,7 @@ const Add = (props) => {
     }
 
     return (
-        <div className='add'>
+        <div className='add' onBlur={() => props.setOpen(false)}>
             <div className="modal">
                 <span onClick={() => props.setOpen(false)} className="close"><IconX/></span>
                 <h1 className='title'>Add new {props.title}</h1>
@@ -50,7 +53,7 @@ Add.propTypes = {
     title : PropTypes.string,
     columns : PropTypes.any,
     setOpen : PropTypes.any,
-
+    open : PropTypes.bool,
 }
 
 export default Add;

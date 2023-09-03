@@ -1,8 +1,11 @@
 import { useParams } from 'react-router-dom';
+
+//Data
 import {singleUserData} from '../js/singleData'
+
+//Components
 import Single from "../components/Single";
 
-import "../styles/User.scss";
 
 const User = () => {
     const {id} = useParams()
@@ -16,7 +19,7 @@ const User = () => {
           </div>
         );
     } else {
-        return <p>محصول مورد نظر یافت نشد</p>;
+        return <p>The desired user was not found. :(</p>;
     }
 };
 

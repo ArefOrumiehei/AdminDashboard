@@ -1,5 +1,5 @@
-@import './variables';
 @import './responsive';
+@import './variables';
 
 .home {
     display: grid;
@@ -20,6 +20,9 @@
     @include sm {
         grid-auto-rows: minmax(120px , auto);   
     }
+    @include xs {
+        grid-template-columns: minmax(100px , auto);
+    }
 
 
     .box {
@@ -31,6 +34,16 @@
     .box1 , .box4 {
         grid-column: span 1;
         grid-row: span 3;
+    }
+
+    .box4 {
+
+        @include xs {
+            display: none;
+        }
+        @include sm {
+            display: none;
+        }
     }
 
     // .box2 , .box3 , .box5 , .box6 {

@@ -1,9 +1,14 @@
-import '../styles/DataTable.scss';
 import PropTypes from 'prop-types'
-
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-import { IconEdit , IconTrash } from '@tabler/icons-react'
 import { Link } from 'react-router-dom';
+
+//Styles
+import '../styles/DataTable.scss';
+
+//MUI
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+
+//Icons
+import { IconEdit , IconTrash } from '@tabler/icons-react'
 
 
 const DataTable = (props) => {

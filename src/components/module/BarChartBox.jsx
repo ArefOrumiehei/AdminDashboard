@@ -1,7 +1,11 @@
-import { BarChart, Bar , ResponsiveContainer, Tooltip } from "recharts";
 import PropTypes from 'prop-types'
 
+//reCharts
+import { BarChart, Bar , ResponsiveContainer, Tooltip } from "recharts";
+
+//Styles
 import '../../styles/BarChartBox.scss'
+
 
 const BarChartBox = (props) => {
     return (

@@ -1,8 +1,10 @@
-import { v4 } from 'uuid';
 import PropTypes from 'prop-types'
+import { v4 } from 'uuid';
 
+//Styles
 import '../styles/Single.scss';
 
+//reCharts
 import { Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis , Tooltip } from 'recharts';
 
 
